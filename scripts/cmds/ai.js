@@ -60,7 +60,7 @@ module.exports = {
   langs: {
     en: {
       final: "",
-      header: "🧋✨ | 𝙼𝚘𝚌𝚑𝚊 𝙰𝚒\n━━━━━━━━━━━━━━━━",
+      header: "🧋✨ | Raze AI\n━━━━━━━━━━━━━━━━",
       footer: "━━━━━━━━━━━━━━━━",
     }
   },
@@ -95,8 +95,8 @@ module.exports = {
         return;
       }
 
-      if (prompt === 'hello') {
-        const greetingMessage = `${getLang("header")}\nHello! How can I assist you today?\n${getLang("footer")}`;
+      if (prompt === 'who is jco') {
+        const greetingMessage = `${getLang("header")}\nHello! Im Raze Ai Jco is the one who created me?\n${getLang("footer")}`;
         api.sendMessage(greetingMessage, event.threadID, event.messageID);
         console.log('Sent greeting message as a reply to user');
         return;
